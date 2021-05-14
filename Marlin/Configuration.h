@@ -1710,8 +1710,7 @@
 #define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
 #define PREHEAT_2_TEMP_CHAMBER 35
 
-/**
- * Nozzle Park
+/*
  *
  * Park the nozzle at the given XYZ position on idle or G27.
  *
@@ -1961,6 +1960,17 @@
  * you must uncomment the following option or it won't work.
  */
 // #define SDSUPPORT
+#define SDSUPPORT
+
+/**
+ * SD CARD: SPI SPEED
+ *
+ * Enable one of the following items for a slower SPI transfer speed.
+ * This may be required to resolve "volume init" errors.
+ */
+//#define SPI_SPEED SPI_HALF_SPEED
+//#define SPI_SPEED SPI_QUARTER_SPEED
+//#define SPI_SPEED SPI_EIGHTH_SPEED
 
 /**
  * SD CARD: ENABLE CRC
@@ -2219,7 +2229,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+// #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // K.3D Full Graphic Smart Controller
