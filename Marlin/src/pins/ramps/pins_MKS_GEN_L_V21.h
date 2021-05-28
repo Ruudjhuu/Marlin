@@ -50,20 +50,35 @@
 #endif
 #ifndef Z_CS_PIN
   #define Z_CS_PIN                            65
+
+// ORIGINAL
+// #endif
+// #ifndef E0_CS_PIN
+//   #define E0_CS_PIN                           66
+// #endif
+// #ifndef E1_CS_PIN
+//   #define E1_CS_PIN                           12
+// #endif
+
 #endif
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                           66
+  #define E0_CS_PIN                           12
 #endif
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN                           12
+  #define E1_CS_PIN                           66
 #endif
 
 // TMC2130 Diag Pins (currently just for reference)
 #define X_DIAG_PIN                             3
 #define Y_DIAG_PIN                            14
 #define Z_DIAG_PIN                            18
-#define E0_DIAG_PIN                            2
-#define E1_DIAG_PIN                           15
+
+//ORIGINAL
+// #define E0_DIAG_PIN                            2
+// #define E1_DIAG_PIN                           15
+
+#define E0_DIAG_PIN                           15
+#define E1_DIAG_PIN                            2
 
 #ifndef SERVO1_PIN
   #define SERVO1_PIN                          21
@@ -75,11 +90,26 @@
   #define SERVO3_PIN                          32
 #endif
 
+//ORIGNINAL
+// #ifndef E1_SERIAL_TX_PIN
+//   #define E1_SERIAL_TX_PIN                    20
+// #endif
+// #ifndef E1_SERIAL_RX_PIN
+//   #define E1_SERIAL_RX_PIN                    12
+// #endif
+
+#ifndef E0_SERIAL_TX_PIN
+  #define E0_SERIAL_TX_PIN                  20
+#endif
+#ifndef E0_SERIAL_RX_PIN
+  #define E0_SERIAL_RX_PIN                  12
+#endif
+
 #ifndef E1_SERIAL_TX_PIN
-  #define E1_SERIAL_TX_PIN                    20
+  #define E1_SERIAL_TX_PIN                    44
 #endif
 #ifndef E1_SERIAL_RX_PIN
-  #define E1_SERIAL_RX_PIN                    12
+  #define E1_SERIAL_RX_PIN                    66
 #endif
 
 #include "pins_RAMPS.h"
